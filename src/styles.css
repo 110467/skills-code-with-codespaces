@@ -1,0 +1,31 @@
+/* add an amazing animation to the social icons */
+
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--clr-white);
+  z-index: 100;
+}
+
+img.socialIcon:hover {
+    animation: bounce 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
